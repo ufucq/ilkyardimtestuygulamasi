@@ -116,12 +116,12 @@ def main():
     init_session_state()
 
     if not st.session_state.authenticated:
-        passphrase = st.text_input("Geçiş Cümlesini giriniz:")
+        passphrase = st.text_input("Geçiş Cümlesini Giriniz:")
         if passphrase == "Ufuk Adamdır":
             st.session_state.authenticated = True
             st.rerun()
         elif passphrase != "":
-            st.error("Hata Geçiş Cümlesi için Sayın Ufuk KAYA ile iletişime geçiniz.")
+            st.error("Hatalı geçiş cümlesi!! Geçiş cümlesi için Sayın Ufuk KAYA ile iletişime geçiniz.")
         return
 
     # authenticated
