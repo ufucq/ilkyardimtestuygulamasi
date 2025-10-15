@@ -2,7 +2,7 @@ import streamlit as st
 from quiz_data import tests
 
 # Set page config
-st.set_page_config(page_title="Test Uygulaması", layout="wide")
+st.set_page_config(page_title="İlk Yardım Eğitimi Test Uygulaması", layout="wide")
 
 # --- STYLING ---
 def local_css(file_name):
@@ -141,7 +141,7 @@ def main():
         return
 
     # quiz started
-    st.title("İlk Yar Test Uygulaması")
+    st.title("İlk Yardım Eğitimi Test Uygulaması")
     st.header(st.session_state.test_selection)
     questions = tests[st.session_state.test_selection]["questions"]
 
